@@ -12,7 +12,7 @@ listb.sort()
 distance = 0
 for i in range(len(lista)):
     distance += abs(lista[i] - listb[i])
-print("Distance:", distance)
+print(distance)
 
 # Part 2
 # creating a map because i think thats the best way to find frequency.
