@@ -1,4 +1,4 @@
-f = open("day4_input.txt","r")
+f = open(".gitignore/day4_input.txt","r")
 txtinput1 = f.read().split("\n")
 txtinput = [list(row) for row in txtinput1]
 
@@ -27,8 +27,7 @@ def search(x, y, di, dj):
         nx, ny = x + (di * i), y + (dj * i)
         if not (0 <= nx < rows and 0 <= ny < cols):
            return False
-        
-        if txtinput[nx][ny] != xmas[i]:
+        elif txtinput[nx][ny] != xmas[i]:
             return False
     return True
 
