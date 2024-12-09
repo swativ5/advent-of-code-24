@@ -1,35 +1,3 @@
-# for r in range(len(txtinput) - 1):
-#     row = txtinput[r]
-#     for char in range(len(row)):
-#         #left SMAX
-#         if char + 1 - 4 > 0:
-#             a, b, c, d = row[char], row[char - 1], row[char - 2], row[char - 3]
-#             if a not in checked and b not in checked and c not in checked and d not in checked:
-#                 if a == "X" and b == "M" and c == "A" and d == "S":
-#                     count += 1
-
-#         #right XMAS
-#         if char + 4 <= len(row):
-#             a, b, c, d = row[char], row[char + 1], row[char + 2], row[char + 3]
-#             if a not in checked and b not in checked and c not in checked and d not in checked:
-#                 if a == "X" and b == "M" and c == "A" and d == "S":
-#                     count += 1
-#         #up XMAS
-#         if r + 1 - 4 > 0:
-#             a, b, c, d = txtinput[r][char], txtinput[r + 1][char], txtinput[r + 2][char], txtinput[r + 3][char]
-#             if a not in checked and b not in checked and c not in checked and d not in checked:
-#                 if a == "X" and b == "M" and c == "A" and d == "S":
-#                     count += 1
-#         #down XMAS
-#         if r + 4 <= len(txtinput):
-#             a, b, c, d = txtinput[r][char], txtinput[r + 1][char], txtinput[r][char - 2], txtinput[r][char - 3]
-#             if a not in checked and b not in checked and c not in checked and d not in checked:
-#                 if a == "X" and b == "M" and c == "A" and d == "S":
-#                     count += 1
-
-
-
-
 58990   83989
 26183   15707
 48195   12659
