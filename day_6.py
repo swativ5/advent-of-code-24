@@ -67,7 +67,7 @@ def is_cycle(block, c_direction, current):
 
 
 
-f = open("input.txt", "r")
+f = open("day6_input.txt", "r")
 raw_block = f.read().strip()
 raw_block = """....#.....
 .........#
@@ -115,7 +115,7 @@ def safe(cx, cy, length = len(raw_block[0]), width = len(raw_block)):
 
 print("part 2")
 
-# count = 0
+count = 0
 # obstacles = set()
 # while safe(x, y):
 #     nx, ny = move_a_step(direction, (x,y))
