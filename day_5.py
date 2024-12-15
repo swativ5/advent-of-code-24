@@ -17,26 +17,40 @@ def check_valid_row(value):
     return True
 
 sum = 0
-wrong_rows = []
 for row in values:
     value = [int(v) for v in row.split(",")]
     if check_valid_row(value):
         m = len(value) // 2
         sum += value[m]
-    else:
-        wrong_rows.append(value)
 print(sum)
 
 
 # Part 2
-after = dict()
-for c1, c2 in c:
-    if c1 not in after:
-        after[c1] = []
-    if c2 not in after:
-        after[c2] = []
-    after[c1].append(c2)
+def isLessThan(a, b):
+    for condition in c:
+        if a in condition and b in condition:
+            if a == condition[0] and b == condition[1]:
+                return True
+            if b == condition[0] and a == condition[1]:
+                return False
+    return 0;
 
-# may god help i give up
-def custom_sort(row):
-    pass
+def customSort(record):
+    temp = 0
+    for i in range(len(record)):
+        for j in range(i + 1, len(record)):
+            if not isLessThan(record[i], record[j]):
+                record[i], record[j] = record[j], record[i]
+    return record
+
+
+sum = 0
+for row in values:
+    value = [int(v) for v in row.split(",")]
+    if not check_valid_row(value):
+        corrected_row = customSort(value)
+        m = len(corrected_row) // 2
+        sum += corrected_row[m]
+print(sum)
+#5377
+#5200
