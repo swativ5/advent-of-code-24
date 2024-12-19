@@ -1,5 +1,5 @@
 import re
-f = open("day3_input.txt", "r")
+f = open("input/day3_input.txt", "r")
 txt = f.read()
 
 # Part 1

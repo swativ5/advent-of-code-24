@@ -1,4 +1,4 @@
-f = open("day5_input.txt", "r")
+f = open("input/day5_input.txt", "r")
 txtinput = f.read().strip()
 conditions, values = txtinput.split("\n\n")
 conditions, values = conditions.split("\n"), values.split("\n")

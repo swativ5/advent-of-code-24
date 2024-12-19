@@ -67,7 +67,7 @@ def is_cycle(block, c_direction, current):
 
 
 
-f = open("day6_input.txt", "r")
+f = open("input/day6_input.txt", "r")
 raw_block = f.read().strip()
 raw_block = """....#.....
 .........#

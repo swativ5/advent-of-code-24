@@ -1,6 +1,6 @@
 
 # Part 1
-f = open("day2_input.txt", "r")
+f = open("input/day2_input.txt", "r")
 txtinput = f.read().split("\n")
 input = []
 for i in range(len(txtinput) - 1):

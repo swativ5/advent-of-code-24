@@ -1,5 +1,5 @@
 # Part 1
-f = open("day1_input.txt", "r")
+f = open("input/day1_input.txt", "r")
 txtinput = f.read().split("\n")
 lista = []
 listb = []

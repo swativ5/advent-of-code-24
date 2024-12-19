@@ -1,4 +1,4 @@
-f = open("day8_input.txt", "r")
+f = open("input/day8_input.txt", "r")
 raw_grid = f.read().strip()
 raw_grid = raw_grid.split("\n")
 grid = [list(row) for row in raw_grid]

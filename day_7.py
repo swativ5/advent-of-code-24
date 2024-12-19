@@ -1,4 +1,4 @@
-f = open("day7_input.txt", "r")
+f = open("input/day7_input.txt", "r")
 text = f.read()
 # text = """190: 10 19
 # 3267: 81 40 27

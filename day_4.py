@@ -1,4 +1,4 @@
-f = open("day4_input.txt","r")
+f = open("input/day4_input.txt","r")
 txtinput1 = f.read().strip().split("\n")
 txtinput = [list(row) for row in txtinput1]
 
